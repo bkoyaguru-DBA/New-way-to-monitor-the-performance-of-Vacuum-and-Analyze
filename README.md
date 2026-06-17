@@ -1,6 +1,6 @@
 # New-way-to-monitor-the-performance-of-Vacuum-and-Analyze
 PostgreSQL 18 will offer a new way to monitor the performance of Vacuum and Analyze
-# PostgreSQL 18: Vacuum and Analyze Execution Time Statistics
+#Overview
 
 Prior to PostgreSQL 18, administrators had to rely on the `log_autovacuum_min_duration` parameter to capture vacuum and analyze execution times. This required enabling logging, parsing log files, and often using tools such as pgBadger to generate meaningful reports.
 
