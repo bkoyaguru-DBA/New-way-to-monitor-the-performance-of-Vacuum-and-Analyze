@@ -1,7 +1,7 @@
 # New-way-to-monitor-the-performance-of-Vacuum-and-Analyze
 PostgreSQL 18 will offer a new way to monitor the performance of Vacuum and Analyze
 
-PostgreSQL 18: Vacuum and Analyze Execution Time Statistics
+#PostgreSQL 18: Vacuum and Analyze Execution Time Statistics
 Prior to PostgreSQL 18, administrators had to rely on the `log_autovacuum_min_duration` parameter to capture vacuum and analyze execution times. This required enabling logging, parsing log files, and often using tools such as pgBadger to generate meaningful reports.
 
 PostgreSQL 18 introduces new statistics columns in `pg_stat_all_tables` that store cumulative execution times for both manual and automatic vacuum/analyze operations. Combined with existing counters (`vacuum_count`, `autovacuum_count`, `analyze_count`, and `autoanalyze_count`), these metrics make it possible to calculate average execution times directly from SQL.
